@@ -14,10 +14,10 @@
   <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark shadow fixed-top p-3,5">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow fixed-top p-3,5">
       <!-- navbar navbar-expand-lg bg-body-tertiary -->
       <div class="container">
-          <a class="navbar-brand pt-3" href="#"><h3>Artikel</h3></a>
+          <a class="navbar-brand pt-3" href="../index.html#home"><h3>Artikel</h3></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,7 +30,7 @@
                       <a class="nav-link" href="../index.html#about">About</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="../index.html#services">Servicse</a>
+                      <a class="nav-link" href="../index.html#services">Services</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="../index.html#gallery">Portofolio</a>
@@ -54,7 +54,7 @@
         <div class="col-lg-8">
           <article>
             <h1 class="mb-3">Pentingnya Kesadaran Mejaga Hutan</h1>
-            <p class="text-muted">Ditulis oleh <strong>Damar</strong> pada 2 Maret 2025</p>
+            <p>Ditulis oleh <strong>Damar</strong> pada 2 Maret 2025</p>
             <img src="../assets/img/185726-876210695_tiny.jpg" class="img-fluid rounded mb-4" alt="Gambar Artikel">
   
             <p>Satwa liar kita adalah salah satu dari sekian banyak permata alami yang kita miliki dan bergantung pada bagaimana kita untuk melindunginya. Jelas, krisis habitat harus dipulihkan dan dipelihara sesegera mungkin sebelum semuanya terlambat. Hutan memainkan peran penting dalam memurnikan atmosfer, menjaga kesuburan tanah, dan penyeimbang polusi global yang kian mengkhawatirkan tiap tahunnya. <br><br>
@@ -115,6 +115,27 @@
   </div>
 
   <!-- Contact Me -->
+
+  <!-- komen -->
+  <!-- komen -->
+  <section class="coment_container justify-content-center container p-5">
+    <h3 class="section_title">Coment</h3>
+    <form id="coment-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama Lengkap</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="mb-3">
+        <label for="pesan" class="form-label">Pesan</label>
+        <textarea class="form-control" id="pesan" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+  </section>
         
           <!-- Contact Me -->
 <section class="contact section py-5" id="contact">
@@ -199,9 +220,81 @@
 </section>
   
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center pb-1 d-flex justify-content-center align-items-center" style="margin-top: 1%; height: 80px;">
-    <h6 class="m-0 small">Copyright &copy; 2025 Damar Rizky Ramadhan</h6>
-</footer>
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div class="footer__content grid">
+        <div>
+          <a href="#" class="footer__logo">
+            Protofolio Damar
+          </a>
+          <p class="footer__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" target="_blank" class="footer__social-link">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title"> Quick Link</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="../index.html#home" class="footer__link">Home</a>
+              </li>
+              <li>
+                <a href="../index.html#about" class="footer__link">About</a>
+              </li>
+              <li>
+                <a href="../index.html#services" class="footer__link">Services</a>
+              </li>
+              <li>
+                <a href="../index.html#gallery" class="footer__link">Portofolio</a>
+              </li>
+              <li>
+                <a href="../index.html#artikel" class="footer__link">Articles</a>
+              </li>
+              <li>
+                <a href="../index.html#contact" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer__title">Services</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Photography</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Video Editing</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">Web Development</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__group container">
+        
+        <div>
+          <span class="footer__copy small">Copyright &copy; 2025 Damar Rizky Ramadhan</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>

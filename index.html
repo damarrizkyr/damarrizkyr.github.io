@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portofolio Damar</title>
+    <link rel="shortcut icon" href="assets/img/depositphotos_145988873-stock-illustration-pixel-art-guitar-player.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/Style.css">
 
@@ -16,7 +19,7 @@
     <!-- header -->
         <header>
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark shadow fixed-top p-3,5">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow fixed-top p-3,5">
                 <!-- navbar navbar-expand-lg bg-body-tertiary -->
                 <div class="container">
                     <a class="navbar-brand pt-3" href="#"><h3><i class="bi bi-tornado"></i> Portofolio Damar</h3></a>
@@ -32,7 +35,7 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">Servicse</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#gallery">Portofolio</a>
@@ -54,11 +57,11 @@
     <!-- Main -->
         <main class="main">
             <!-- heroes -->
-                <div class="home pb-5rem section" id="home">
+                <section class="home pb-5rem section" id="home">
                     <img src="assets/img/7ac31207-c3f6-417b-8312-e7262a4d3c3e.gif" alt="home image" class="home_bg">
                     <div class="home_shadow"></div>
                     <div class="home_container container grid">
-                        <div class="home_data">
+                        <div class="home_data" data-aos="zoom-out-up">
                             <h3 class="home_subtitle">
                                 Welcome To My Website
                             </h3>
@@ -77,15 +80,16 @@
                         </div>
                     </div>
 
-                </div>
+                </section>
              <!-- end heroes -->
 
             <!-- about me -->
+
                 <!-- introduction -->
                 <div class="about section" id="about">
                     <div class="about_container container grid">
                         
-                            <div class="about_data">
+                            <div class="about_data" data-aos="zoom-in-right">
                                 <h2 class="section_title">
                                     About Me
                                 </h2>
@@ -100,24 +104,27 @@
                                     <ul>
                                         <li>Photography</li>
                                         <li>Front-end Develover</li>
+                                        <li>Video Editing</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="about_image">
+                            <div class="about_image" data-aos="zoom-in-left">
                                 <img src="assets/img/IMG-20210920-WA0007.jpg" alt="about image" class="about_img">
                                 <div class="about_shadow"></div>
                             </div>
-                          </div>
+                      </div>
                         
                     </div>
-                </section>
+                  
                  <!-- end introduction -->
                  
                 
                  <!-- end experiance and skill -->
                 <!-- sertifikat -->
-                <div class="sertifikat container bg-dark bg-opacity-50 " id="sertifikat">
-                    <div class="sertifikat_container container grid">
+                <div class="sertifikat section container bg-dark bg-opacity-50 pt-5" id="sertifikat" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
+                  <h4 class="section_title">Certificate</h4>
+                    <div class="sertifikat_container container grid mx-auto px-4">
                             <div class="card_about grid">
                                 <img src="assets/img/Damar Rizky Ramadhan HTML.jpg" alt="">
                                 <div class="card_content_about">
@@ -147,13 +154,14 @@
              <!-- end about me -->
 
              <!-- Servicse -->
-            <section class="services section grid" id="services">
+            <section class="services container section grid" id="services" data-aos="fade-up">
                 <div class="services_container container grid">
 
                     <h2 class="section_title">
                         Services
                     </h2>
-                    <div class="flip-card">
+                    <div class="row justify-content-center gap-5">
+                      <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 
@@ -164,6 +172,30 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                
+                                <p class="title"><i class="bi bi-display"></i> Editing Video</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Meneriama Jasa Editing Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                
+                                <p class="title"><i class="bi bi-brush"></i> Web Desaign</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Meneriman jasa mendesaign web</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
 
                     
                 </div>
@@ -171,9 +203,9 @@
                     <!-- end services -->
 
               <!-- Gallery -->
-        <section class="gallery section grid" id="gallery">
+        <section class="gallery container section grid" id="gallery" data-aos="fade-up">
             <h2 class="section_title">
-                Portofolio dan Gallery
+                Portofolio and Gallery
             </h2>
 
             <!-- Filter Buttons -->
@@ -216,8 +248,8 @@
 
         <!-- artikel -->
         <section class="artikel section" id="artikel">
-            <div class="artikel_container">
-                <h2 class="section_title">Artikel</h2>
+            <div class="artikel_container" data-aos="fade-up">
+                <h2 class="section_title">Articles</h2>
                 <div class="artikel_image">
                     <img src="assets/img/185726-876210695_tiny.jpg" alt="artikel image" class="artikel_img">
                     <div class="artikel_shadow"></div>
@@ -236,7 +268,7 @@
                         <a href="artikel/artikel01.html" class="button">Selengkapnya</a>
                     </div>
                 </div>
-                <div class="justify-content-center row container gap-5">
+                <div class="artikel_lain justify-content-center row container gap-5">
 
                   <div class="card_artikel">
                     <div class="card__corner_artikel"></div>
@@ -271,12 +303,32 @@
         </section>
         <!-- end artikel -->
 
+        <!-- komen -->
+        <section class="coment_container justify-content-center container p-5">
+          <h2 class="section_title">Comment</h2>
+          <form id="coment-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </section>
+
         <!-- Contact Me -->
         
           <!-- Contact Me -->
 <section class="contact section py-5" id="contact">
     <div class="container px-5">
-      <h4 class="text-center my-5">Contact</h4>
+      <h2 class="text-center my-5 section_title">Contact</h2>
   
       <!-- Kontainer Konten Contact -->
       <div class="row justify-content-center text-center text-md-start gy-4">
@@ -359,15 +411,90 @@
      <!-- end main -->
       
      
-     <!-- Footer -->
-     <footer class="bg-dark text-white text-center pb-1 d-flex justify-content-center align-items-center" style="margin-top: 1%; height: 80px;">
-      <h6 class="m-0 small">Copyright &copy; 2025 Damar Rizky Ramadhan</h6>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="#" class="footer__logo">
+              Protofolio Damar
+            </a>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="footer__social">
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" target="_blank" class="footer__social-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title"> Quick Link</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                  <a href="#sevices" class="footer__link">Services</a>
+                </li>
+                <li>
+                  <a href="#gallery" class="footer__link">Portofolio</a>
+                </li>
+                <li>
+                  <a href="#artikel" class="footer__link">Articles</a>
+                </li>
+                <li>
+                  <a href="#contact" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__title">Services</h3>
+              <ul class="footer__links">
+                <li>
+                  <a href="#" class="footer__link">Photography</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Video Editing</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Web Desaign</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__group container">
+          
+          <div>
+            <span class="footer__copy small">Copyright &copy; 2025 Damar Rizky Ramadhan</span>
+          </div>
+        </div>
+      </div>
+    </footer>
   
       <!-- End Footer -->
 
       
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

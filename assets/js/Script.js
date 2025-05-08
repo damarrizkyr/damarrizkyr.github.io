@@ -26,6 +26,16 @@ const filterCards = e => {
 
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
 
+// Comment
+document.addEventListener("DOMContentLoaded", () => {
+    const comentForm = document.getElementById("coment-form");
+    
+    comentForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent form from reloading the page
+        alert("Message Sent!");
+        comentForm.reset(); // Clear the form fields
+    });
+});
 // Contact
 document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById("contact-form");
